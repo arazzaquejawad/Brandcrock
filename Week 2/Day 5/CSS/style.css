@@ -1,0 +1,90 @@
+.container{
+width:100%;
+height:100%;
+background-image: url("../Images/back.jpg");
+background-size: cover;
+}
+input:not([type=checkbox]):not([type=radio]),select
+{
+    background: transparent;
+    border: 1px solid #FFD8D8;
+	color:white;
+	padding:2%;
+	width:100%;
+	box-sizing:border-box;
+}
+input:focus { 
+    outline: none !important;
+    border: 1px solid #f40000 !important;
+	transition: border-color 0.5s ease !important;
+}
+.regPanel{
+float:right;
+width:42%;
+padding:2%;
+background-color:#32324e;
+opacity: 0.85;
+  filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+.option{
+float:left;
+width:50%;
+text-align: center;
+padding:1%;
+box-sizing: border-box;
+font-family: 'Titillium Web', sans-serif;
+font-size:25px;
+color:#B0B0B0;
+background-color:#191938;
+cursor:pointer;
+}
+.option:hover{
+background-color:#B0B0B0;
+color:#191938;
+border-color:#191938;
+transition: background-color 0.5s ease;
+}
+.selected{
+background-color:#f40000;
+color:white;
+}
+.clear{
+clear:both;
+}
+.dataform{
+width:100%;
+color:white;
+box-sizing: border-box;
+padding-left:20%;
+padding-right:20%;
+font-size:15px;	
+margin-bottom:10%;
+font-family: 'Titillium Web', sans-serif;
+}
+.menu{
+width:100%;
+}
+::-moz-placeholder {  
+   text-align: center;
+}
+.userinput{
+width:100%;margin-top:5%;
+}
+#sender{
+cursor:pointer;margin-top:15%;border-color:red;padding:2%;font-family: 'Titillium Web', sans-serif;font-size:25px;color:white;background-color:#f40000;width:100%;
+border: 1px solid #f40000;
+}
+#sender:hover{
+color:#f40000;
+background-color:white;
+transition: background-color 0.5s ease;
+}
+@media only screen and (max-width: 600px) and (min-width: 300px){
+	#sender{
+		font-size:18px;
+	}
+	.option{
+		font-size:16px;
+	}
+	.regPanel{width:100%;}
+}

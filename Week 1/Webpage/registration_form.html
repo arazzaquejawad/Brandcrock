@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>School Registration</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<script src = "../Scripts/sendform.js"></script>
+</head>
+<body>
+<div class = "container">
+<div class = "regPanel">
+
+<div class = "menu">
+
+<div class = "option selected">
+Register
+</div>
+<div class = "option">
+Sign In
+</div>
+<div class = "clear"></div>
+</div>
+
+<div style = "width:100%;margin-top:5%;margin-bottom:5%;text-align:center;font-family: 'Titillium Web', sans-serif;font-size:30px;color:white;text-decoration: underline;">
+Registration Form
+</div>
+
+<div class = "dataform">
+<form>
+  <input type="text" name="roll" class = "userinput" placeholder="Roll# ,	E.g: 16CS191408" required>
+  <input type="text" name="name" class = "userinput" placeholder="Name ,	E.g: Jawad Mirza" required>
+  <input type="text" name="fname" class = "userinput" placeholder="Father Name ,	E.g: Ali Khan" required>
+  
+  <div class = "userinput">
+  Class Standard:&nbsp&nbsp<br>
+  <select name="class" style = "width:70%;">
+  <option value="one">Class 1</option>
+  <option value="two">Class 2</option>
+  <option value="three">Class 3</option>
+  <option value="four">Class 4</option>
+  <option value="five">Class 5</option>
+  <option value="six">Class 6</option>
+  <option value="seven">Class 7</option>
+  <option value="eight">Class 8</option>
+  <option value="nine">Class 9</option>
+  <option value="ten">Class 10</option>
+  <option value="eleven">Class 11</option>
+  <option value="twelve">Class 12</option>
+  </select>
+  </div>
+  
+  <div class = "userinput">
+  Gender:<br>
+  <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female" style = "margin-left:15%;"> Female
+  </div>
+  
+  <div class = "userinput">
+  Recent Photo:<br>
+  <input type="file" name="pic" accept="image/*">
+  </div>
+  
+  <div class = "userinput">
+  Document File:<br>
+  <input type="file" name="docx" accept="application/msword,application/pdf">
+  </div>
+  
+  <button type="submit" onclick="saveform()" value="Submit" id = "sender">Register Me !</button>
+  
+  </form>
+</div>
+
+
+</div>
+
+<div class = "clear"></div>
+</div>
+</body>
+</html>
